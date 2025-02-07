@@ -10,6 +10,7 @@
   * [Request Free Motion Analysis Graph](free-motion-analysis/graph.md)
 * [신체 체형 치수 분석 API](size-analysis/README.md)
   * [이미지 체형 치수 분석 요청](size-analysis/analysis-request.md)
+  * [analysis request](size-analysis/analysis-request-1.md)
 * [골격 분석 API](skeleton-analysis/README.md)
   * [이미지 골격 분석 요청](skeleton-analysis/analysis-request.md)
 * [미래 체형 API](future-shape-analysis/README.md)
