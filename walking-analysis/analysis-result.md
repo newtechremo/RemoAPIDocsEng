@@ -1,33 +1,33 @@
 ---
-description: API for requesting completed gait analysis results.
+description: API for requesting completed walking analysis results.
 ---
 
-# Request Gait Analysis Result
+# Request Walking Analysis Result
 
-## Request Gait Analysis Result
+## Request Walking Analysis Result
 
 <mark style="color:green;">`POST`</mark> `http://api.remo.re.kr/api/analysis-walking-result`
 
-Returns gait analysis results by receiving user id (email) and analyzed video uuid as parameters.
+Returns walking analysis results by receiving user id (email) and analyzed video uuid as parameters.
 
 **Parameters(json)**
 
-| Name | Type | Description | Required |
-|------|------|-------------|-----------|
-| `id` | string | User email address | true |
-| `uuid` | string | Video uuid | true |
+| Name   | Type   | Description        | Required |
+| ------ | ------ | ------------------ | -------- |
+| `id`   | string | User email address | true     |
+| `uuid` | string | Video uuid         | true     |
 
 **Response(json)**
 
-| Name | Type | Description |
-|------|------|-------------|
-| `state` | int | 1 for success, 0 for failure |
-| `message` | string | Success or failure related guidance message |
-| `uuid` | string | UUID received as parameter |
-| `result` | list | Contains dict values for cadence, gait velocity(m/s), step length(cm), stance phase(%), swing phase(%), and double support(%) in order |
-| `total` | float | Average of left and right values |
-| `left` | float | Left side value |
-| `right` | float | Right side value |
+| Name      | Type   | Description                                                                                                                            |
+| --------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------- |
+| `state`   | int    | 1 for success, 0 for failure                                                                                                           |
+| `message` | string | Success or failure related guidance message                                                                                            |
+| `uuid`    | string | UUID received as parameter                                                                                                             |
+| `result`  | list   | Contains dict values for cadence, gait velocity(m/s), step length(cm), stance phase(%), swing phase(%), and double support(%) in order |
+| `total`   | float  | Average of left and right values                                                                                                       |
+| `left`    | float  | Left side value                                                                                                                        |
+| `right`   | float  | Right side value                                                                                                                       |
 
 **Request Example**
 

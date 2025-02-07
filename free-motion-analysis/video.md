@@ -1,5 +1,5 @@
 ---
-description: API for analyzing user's gait by receiving video input.
+description: API for analyzing user's free motion by receiving video input.
 ---
 
 # Request Free Motion Video Analysis
@@ -12,20 +12,20 @@ Returns the waiting time until analysis completion after receiving a free motion
 
 **Parameters(json)**
 
-| Name | Type | Description | Required |
-|------|------|-------------|-----------|
-| `base64_video` | string(base64 encoded) | Base64 encoded gait video string | true |
-| `id` | string | User email address | true |
-| `height` | string | Height of the analysis subject | true |
+| Name           | Type                   | Description                             | Required |
+| -------------- | ---------------------- | --------------------------------------- | -------- |
+| `base64_video` | string(base64 encoded) | Base64 encoded free motion video string | true     |
+| `id`           | string                 | User email address                      | true     |
+| `height`       | string                 | Height of the analysis subject          | true     |
 
 **Response(json)**
 
-| Name | Type | Description |
-|------|------|-------------|
-| `state` | int | 1 for success, 0 for failure |
-| `message` | string | Success or failure related guidance message |
-| `uuid` | string | Video uuid |
-| `wait_time` | int | Waiting time until result generation after response |
+| Name        | Type   | Description                                         |
+| ----------- | ------ | --------------------------------------------------- |
+| `state`     | int    | 1 for success, 0 for failure                        |
+| `message`   | string | Success or failure related guidance message         |
+| `uuid`      | string | Video uuid                                          |
+| `wait_time` | int    | Waiting time until result generation after response |
 
 **Request Example**
 
@@ -40,6 +40,7 @@ Returns the waiting time until analysis completion after receiving a free motion
 **Response Example**
 
 Success Response (200):
+
 ```json
 {
   "state": 1,
@@ -50,6 +51,7 @@ Success Response (200):
 ```
 
 Error Response (400):
+
 ```json
 {
   "state": 0,
@@ -58,6 +60,7 @@ Error Response (400):
 ```
 
 Error Response (400):
+
 ```json
 {
   "state": 0,

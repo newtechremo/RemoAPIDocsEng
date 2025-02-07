@@ -1,10 +1,10 @@
 ---
-description: API for requesting completed gait analysis graph values.
+description: API for requesting completed walking analysis graph values.
 ---
 
-# Request Gait Analysis Graph
+# Request Walking Analysis Graph
 
-## Request Gait Analysis Graph
+## Request Walking Analysis Graph
 
 <mark style="color:green;">`POST`</mark> `http://api.remo.re.kr/api/analysis-walking-angle`
 
@@ -12,27 +12,27 @@ Returns angle values needed to draw graphs by receiving user id (email) and anal
 
 **Parameters(json)**
 
-| Name | Type | Description | Required |
-|------|------|-------------|-----------|
-| `id` | string | User email address | true |
-| `uuid` | string | Video uuid | true |
+| Name   | Type   | Description        | Required |
+| ------ | ------ | ------------------ | -------- |
+| `id`   | string | User email address | true     |
+| `uuid` | string | Video uuid         | true     |
 
 **Response(json)**
 
-| Name | Type | Description |
-|------|------|-------------|
-| `state` | int | 1 for success, 0 for failure |
-| `message` | string | Success or failure related guidance message |
-| `hip` | dict | Hip joint. Contains Sagittal, Coronal, Transverse as keys |
-| `knee` | dict | Knee joint. Contains Sagittal, Coronal, Transverse as keys |
-| `ankle` | dict | Ankle joint. Contains Sagittal, Coronal, Transverse as keys |
-| `Sagittal` | dict | Sagittal plane. Contains range, left, right as keys |
-| `Coronal` | dict | Coronal plane. Contains range, left, right as keys |
-| `Transverse` | dict | Transverse plane. Contains range, left, right as keys |
-| `range` | list | Graph axis range. Sets axis range from first value to second value |
-| `left` | dict | Left side. Contains mean as key |
-| `right` | dict | Right side. Contains mean as key |
-| `mean` | list | List of joint angle values |
+| Name         | Type   | Description                                                        |
+| ------------ | ------ | ------------------------------------------------------------------ |
+| `state`      | int    | 1 for success, 0 for failure                                       |
+| `message`    | string | Success or failure related guidance message                        |
+| `hip`        | dict   | Hip joint. Contains Sagittal, Coronal, Transverse as keys          |
+| `knee`       | dict   | Knee joint. Contains Sagittal, Coronal, Transverse as keys         |
+| `ankle`      | dict   | Ankle joint. Contains Sagittal, Coronal, Transverse as keys        |
+| `Sagittal`   | dict   | Sagittal plane. Contains range, left, right as keys                |
+| `Coronal`    | dict   | Coronal plane. Contains range, left, right as keys                 |
+| `Transverse` | dict   | Transverse plane. Contains range, left, right as keys              |
+| `range`      | list   | Graph axis range. Sets axis range from first value to second value |
+| `left`       | dict   | Left side. Contains mean as key                                    |
+| `right`      | dict   | Right side. Contains mean as key                                   |
+| `mean`       | list   | List of joint angle values                                         |
 
 **Request Example**
 

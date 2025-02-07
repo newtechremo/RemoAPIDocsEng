@@ -1,31 +1,31 @@
 ---
-description: API for analyzing user's gait by receiving video input.
+description: API for analyzing user's walking by receiving video input.
 ---
 
-# Request Gait Video Analysis
+# Request Walking Video Analysis
 
-## Request Gait Video Analysis
+## Request Walking Video Analysis
 
 <mark style="color:green;">`POST`</mark> `http://api.remo.re.kr/api/analysis-walking`
 
-Returns the waiting time until analysis completion after receiving a gait video input.
+Returns the waiting time until analysis completion after receiving a walking video input.
 
 **Parameters(json)**
 
-| Name | Type | Description | Required |
-|------|------|-------------|-----------|
-| `base64_video` | string(base64) | Base64 encoded gait video string | true |
-| `id` | string | User email address | true |
-| `height` | string | Subject's height (cm) | true |
+| Name           | Type           | Description                         | Required |
+| -------------- | -------------- | ----------------------------------- | -------- |
+| `base64_video` | string(base64) | Base64 encoded walking video string | true     |
+| `id`           | string         | User email address                  | true     |
+| `height`       | string         | Subject's height (cm)               | true     |
 
 **Response(json)**
 
-| Name | Type | Description |
-|------|------|-------------|
-| `state` | int | 1 for success, 0 for failure |
-| `message` | string | Success or failure related guidance message |
-| `uuid` | string | Video uuid |
-| `wait_time` | int | Waiting time until result generation after response |
+| Name        | Type   | Description                                         |
+| ----------- | ------ | --------------------------------------------------- |
+| `state`     | int    | 1 for success, 0 for failure                        |
+| `message`   | string | Success or failure related guidance message         |
+| `uuid`      | string | Video uuid                                          |
+| `wait_time` | int    | Waiting time until result generation after response |
 
 **Request Example**
 

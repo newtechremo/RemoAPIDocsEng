@@ -1,10 +1,10 @@
 ---
-description: API for requesting completed gait analysis result videos.
+description: API for requesting completed walking analysis result videos.
 ---
 
-# Request Gait Analysis Result Video
+# Request Walking Analysis Result Video
 
-## Request Gait Analysis Result Video
+## Request Walking Analysis Result Video
 
 <mark style="color:green;">`POST`</mark> `http://api.remo.re.kr/api/analysis-walking-draw`
 
@@ -12,17 +12,17 @@ Returns a base64 encoded video with analysis results drawn on the original video
 
 **Parameters(json)**
 
-| Name | Type | Description | Required |
-|------|------|-------------|-----------|
-| `id` | string | User email address | true |
-| `uuid` | string | Video uuid | true |
+| Name   | Type   | Description        | Required |
+| ------ | ------ | ------------------ | -------- |
+| `id`   | string | User email address | true     |
+| `uuid` | string | Video uuid         | true     |
 
 **Response(json)**
 
-| Name | Type | Description |
-|------|------|-------------|
-| `state` | int | 1 for success, 0 for failure |
-| `message` | string | Success or failure related guidance message |
+| Name           | Type   | Description                                                   |
+| -------------- | ------ | ------------------------------------------------------------- |
+| `state`        | int    | 1 for success, 0 for failure                                  |
+| `message`      | string | Success or failure related guidance message                   |
 | `base64_video` | string | Base64 encoded video with results drawn on the original video |
 
 **Request Example**

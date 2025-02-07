@@ -1,5 +1,5 @@
 ---
-description: API for requesting completed gait analysis graph values.
+description: API for requesting completed free motion analysis graph values.
 ---
 
 # Request Free Motion Analysis Graph
@@ -12,35 +12,35 @@ Returns angle values needed to draw a graph by receiving user id (email), analyz
 
 **Parameters(json)**
 
-| Name | Type | Description | Required |
-|------|------|-------------|-----------|
-| `id` | string | User email address | true |
-| `uuid` | string | Video uuid | true |
-| `joint` | string | Choose one from "Hip", "Knee", "Ankle", "Shoulder", "Elbow", "Wrist", "Spine", "Neck" | true |
+| Name    | Type   | Description                                                                           | Required |
+| ------- | ------ | ------------------------------------------------------------------------------------- | -------- |
+| `id`    | string | User email address                                                                    | true     |
+| `uuid`  | string | Video uuid                                                                            | true     |
+| `joint` | string | Choose one from "Hip", "Knee", "Ankle", "Shoulder", "Elbow", "Wrist", "Spine", "Neck" | true     |
 
 **Response(json)**
 
-| Name | Type | Description |
-|------|------|-------------|
-| `state` | int | 1 for success, 0 for failure |
-| `message` | string | Success or failure related guidance message |
-| `Hip` | dict | Hip joint. Contains Sagittal, Coronal, Transverse as keys. |
-| `Knee` | dict | Knee. Contains Sagittal, Coronal, Transverse as keys. |
-| `Ankle` | dict | Ankle. Contains Sagittal, Coronal, Transverse as keys. |
-| `Shoulder` | dict | Shoulder. Contains Sagittal, Coronal, Transverse as keys. |
-| `Elbow` | dict | Elbow. Contains Sagittal, Coronal, Transverse as keys. |
-| `Wrist` | dict | Wrist. Contains Sagittal, Coronal, Transverse as keys. |
-| `Spine` | dict | Spine. Contains Sagittal, Coronal, Transverse as keys. |
-| `Neck` | dict | Neck. Contains Sagittal, Coronal, Transverse as keys. |
-| `Sagittal` | dict | Sagittal plane. Contains range, left, right as keys. |
-| `Coronal` | dict | Coronal plane. Contains range, left, right as keys. |
-| `Transverse` | dict | Transverse plane. Contains range, left, right as keys. |
-| `range` | list | Graph axis range. Sets axis range from first value to second value |
-| `left` | dict | Left. Contains mean as key. |
-| `right` | dict | Right. Contains mean as key. |
-| `mean` | list | List of joint angle values |
-| `min` | int | Minimum value of mean |
-| `max` | int | Maximum value of mean |
+| Name         | Type   | Description                                                        |
+| ------------ | ------ | ------------------------------------------------------------------ |
+| `state`      | int    | 1 for success, 0 for failure                                       |
+| `message`    | string | Success or failure related guidance message                        |
+| `Hip`        | dict   | Hip joint. Contains Sagittal, Coronal, Transverse as keys.         |
+| `Knee`       | dict   | Knee. Contains Sagittal, Coronal, Transverse as keys.              |
+| `Ankle`      | dict   | Ankle. Contains Sagittal, Coronal, Transverse as keys.             |
+| `Shoulder`   | dict   | Shoulder. Contains Sagittal, Coronal, Transverse as keys.          |
+| `Elbow`      | dict   | Elbow. Contains Sagittal, Coronal, Transverse as keys.             |
+| `Wrist`      | dict   | Wrist. Contains Sagittal, Coronal, Transverse as keys.             |
+| `Spine`      | dict   | Spine. Contains Sagittal, Coronal, Transverse as keys.             |
+| `Neck`       | dict   | Neck. Contains Sagittal, Coronal, Transverse as keys.              |
+| `Sagittal`   | dict   | Sagittal plane. Contains range, left, right as keys.               |
+| `Coronal`    | dict   | Coronal plane. Contains range, left, right as keys.                |
+| `Transverse` | dict   | Transverse plane. Contains range, left, right as keys.             |
+| `range`      | list   | Graph axis range. Sets axis range from first value to second value |
+| `left`       | dict   | Left. Contains mean as key.                                        |
+| `right`      | dict   | Right. Contains mean as key.                                       |
+| `mean`       | list   | List of joint angle values                                         |
+| `min`        | int    | Minimum value of mean                                              |
+| `max`        | int    | Maximum value of mean                                              |
 
 **Request Example**
 
@@ -55,6 +55,7 @@ Returns angle values needed to draw a graph by receiving user id (email), analyz
 **Response Example**
 
 Success Response (200):
+
 ```json
 {
   "state": 1,
@@ -104,6 +105,7 @@ Success Response (200):
 ```
 
 Error Response (400):
+
 ```json
 {
   "state": 0,
