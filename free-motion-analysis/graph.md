@@ -54,8 +54,8 @@ Returns angle values needed to draw a graph by receiving user id (email), analyz
 
 **Response Example**
 
-Success Response (200):
-
+{% tabs %}
+{% tab title="200" %}
 ```json
 {
   "state": 1,
@@ -103,12 +103,14 @@ Success Response (200):
   }
 }
 ```
+{% endtab %}
 
-Error Response (400):
-
+{% tab title="400" %}
 ```json
 {
   "state": 0,
   "message": "file does not exist"
 }
 ```
+{% endtab %}
+{% endtabs %}
