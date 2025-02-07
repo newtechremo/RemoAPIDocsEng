@@ -2,9 +2,9 @@
 description: API for analyzing body shape and measurements from images.
 ---
 
-# Image Body Shape Analysis Request
+# Request Image Body Shape Analysis
 
-## Image Body Shape Analysis Request
+## Request Image Body Shape Analysis
 
 <mark style="color:green;">`POST`</mark> `http://api.remo.re.kr/api/analysis-shape`
 
@@ -97,7 +97,7 @@ fetch("http://api.remo.re.kr/api/analysis-shape", {
 {% endtab %}
 {% endtabs %}
 
-# Response Parameters and Error Codes
+## Response Parameters and Error Codes
 
 **Response Parameters(json)**
 
@@ -158,25 +158,25 @@ fetch("http://api.remo.re.kr/api/analysis-shape", {
 
 **Error Codes**
 
-| Category | Sub-category | Code |
-|----------|-------------|------|
-| Input Data Error | Protocol Error | 400 |
-|  | No Input Data | 411 |
-|  | Image Attachment Error | 412 |
-|  | Front Image Error | 413 |
-|  | Side Image Error | 414 |
-|  | Input Image Upside Down (Both Front & Side) | 415 |
-|  | Input Image Upside Down (Front) | 416 |
-|  | Input Image Upside Down (Side) | 417 |
-| Other Issues | User Not Verified | 420 |
-|  | Invalid API Key | 421 |
-|  | Insufficient Credits | 422 |
-|  | Person Not Detected in Front Image | 511 |
-|  | Person Not Detected in Side Image | 512 |
-|  | Person Not Detected in Both Images | 513 |
-|  | Subject Not Facing Front in Front Image | 514 |
-|  | Subject Not Facing Side in Side Image | 515 |
-|  | Subject Not in Correct Pose in Front/Side Images | 516 |
-|  | Subject Not in A-Pose in Front Image | 517 |
-|  | Subject Not in Attention Pose in Side Image | 518 |
-|  | Incorrect Body Measurement Pose | 519 |
+| Category         | Sub-category                                     | Code |
+| ---------------- | ------------------------------------------------ | ---- |
+| Input Data Error | Protocol Error                                   | 400  |
+|                  | No Input Data                                    | 411  |
+|                  | Image Attachment Error                           | 412  |
+|                  | Front Image Error                                | 413  |
+|                  | Side Image Error                                 | 414  |
+|                  | Input Image Upside Down (Both Front & Side)      | 415  |
+|                  | Input Image Upside Down (Front)                  | 416  |
+|                  | Input Image Upside Down (Side)                   | 417  |
+| Other Issues     | User Not Verified                                | 420  |
+|                  | Invalid API Key                                  | 421  |
+|                  | Insufficient Credits                             | 422  |
+|                  | Person Not Detected in Front Image               | 511  |
+|                  | Person Not Detected in Side Image                | 512  |
+|                  | Person Not Detected in Both Images               | 513  |
+|                  | Subject Not Facing Front in Front Image          | 514  |
+|                  | Subject Not Facing Side in Side Image            | 515  |
+|                  | Subject Not in Correct Pose in Front/Side Images | 516  |
+|                  | Subject Not in A-Pose in Front Image             | 517  |
+|                  | Subject Not in Attention Pose in Side Image      | 518  |
+|                  | Incorrect Body Measurement Pose                  | 519  |

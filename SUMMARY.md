@@ -8,13 +8,12 @@
 * [Free Motion Analysis API](free-motion-analysis/README.md)
   * [Request Free Motion Video Analysis](free-motion-analysis/video.md)
   * [Request Free Motion Analysis Graph](free-motion-analysis/graph.md)
-* [신체 체형 치수 분석 API](size-analysis/README.md)
-  * [이미지 체형 치수 분석 요청](size-analysis/analysis-request.md)
-  * [analysis request](size-analysis/analysis-request-1.md)
-* [골격 분석 API](skeleton-analysis/README.md)
-  * [이미지 골격 분석 요청](skeleton-analysis/analysis-request.md)
-* [미래 체형 API](future-shape-analysis/README.md)
-  * [이미지 미래 체형 생성 요청](future-shape-analysis/generate-request.md)
+* [Body Dimensional Analysis API](size-analysis/README.md)
+  * [Request Image Body Shape Analysis](size-analysis/analysis-request.md)
+* [Skeleton Analysis API](skeleton-analysis/README.md)
+  * [Request Skeleton Analysis](skeleton-analysis/analysis-request.md)
+* [Future Body Shape API](future-shape-analysis/README.md)
+  * [Request Future Body Shape Image Generation](future-shape-analysis/generate-request.md)
 
 ## update
 
