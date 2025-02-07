@@ -1,5 +1,5 @@
 ---
-description: 소개 글
+description: Introduction
 ---
 
 # 자유 모션 분석 API

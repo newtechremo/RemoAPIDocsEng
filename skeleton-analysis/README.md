@@ -1,5 +1,5 @@
 ---
-description: 소개 글
+description: Introduction
 ---
 
 # 골격 분석 API
