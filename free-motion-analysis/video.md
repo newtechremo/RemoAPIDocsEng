@@ -39,8 +39,8 @@ Returns the waiting time until analysis completion after receiving a free motion
 
 **Response Example**
 
-Success Response (200):
-
+{% tabs %}
+{% tab title="200" %}
 ```json
 {
   "state": 1,
@@ -49,21 +49,23 @@ Success Response (200):
   "message": "success"
 }
 ```
+{% endtab %}
 
-Error Response (400):
-
+{% tab title="400" %}
 ```json
 {
   "state": 0,
   "message": "person not detected"
 }
 ```
+{% endtab %}
 
-Error Response (400):
-
+{% tab title="400" %}
 ```json
 {
   "state": 0,
   "message": "keypoint estimation error"
 }
 ```
+{% endtab %}
+{% endtabs %}
