@@ -12,6 +12,8 @@
   * [Request Image Body Shape Analysis](size-analysis/analysis-request.md)
 * [Skeleton Analysis API](skeleton-analysis/README.md)
   * [Request Skeleton Analysis](skeleton-analysis/analysis-request.md)
+* [Skeleton Analysis API(with back)](skeleton-analysis-back/README.md)
+  * [Request Skeleton Analysis](skeleton-analysis-back/request-skeleton-analysis.md)
 * [Future Body Shape API](future-shape-analysis/README.md)
   * [Request Future Body Shape Image Generation](future-shape-analysis/generate-request.md)
 
