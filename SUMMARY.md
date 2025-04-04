@@ -12,7 +12,7 @@
   * [Request Image Body Shape Analysis](size-analysis/analysis-request.md)
 * [Skeleton Analysis API](skeleton-analysis/README.md)
   * [Request Skeleton Analysis](skeleton-analysis/analysis-request.md)
-* [Skeleton Analysis API(split)](skeleton-analysis-split/README.md)
+* [Skeleton Analysis(split) API](skeleton-analysis-split/README.md)
   * [Front Image Skeleton Analysis Request](skeleton-analysis-split/front-image-skeleton-analysis-request.md)
   * [Side Image Skeleton Analysis Request](skeleton-analysis-split/side-image-skeleton-analysis-request.md)
   * [Back Image Skeleton Analysis Request](skeleton-analysis-split/back-image-skeleton-analysis-request.md)

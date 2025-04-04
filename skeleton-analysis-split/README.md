@@ -1,9 +1,8 @@
 ---
 description: Introduction
-hidden: true
 ---
 
-# Skeleton Analysis API(split)
+# Skeleton Analysis(split) API
 
 ### front image
 
