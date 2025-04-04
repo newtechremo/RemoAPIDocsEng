@@ -203,4 +203,4 @@ cv2.destroyAllWindows()
 
 **Result Image**
 
-<figure><img src="../.gitbook/assets/out (1).jpg" alt="" width="375"><figcaption><p>borigimg</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/back_result.jpg" alt="" width="375"><figcaption><p>borigimg</p></figcaption></figure>
